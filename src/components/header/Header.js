@@ -1,7 +1,7 @@
 import React from 'react';
 import { ProjectMenu } from '../project-menu';
 
-import { ReactComponent as PlayIcon} from '../play-button.svg';
+import { ReactComponent as PlayIcon} from '../../play-button.svg';
 
 function Header() {
     return (

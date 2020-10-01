@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { WelcomePage } from './welcome-page';
+import { WelcomePage } from './components/welcome-page';
 import * as serviceWorker from './serviceWorker';
+import { Provider } from 'react-redux';
+import store from './store';
 import './index.css';
 import './assets/main.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <WelcomePage />
+    <Provider store={store}>
+      <WelcomePage />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
